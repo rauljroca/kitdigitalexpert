@@ -6,6 +6,7 @@
   "exclude": [
     "/_astro/*",
     "/fonts/*",
-    "/logo.svg"
+    "/logo.svg",
+    "/kitdigitalexpert.svg"
   ]
 }
