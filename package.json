@@ -12,9 +12,12 @@
     "dependencies": {
         "@astrojs/check": "0.9.4",
         "@astrojs/cloudflare": "^12.2.0",
-        "astro": "5.0.5",
+        "@tailwindcss/typography": "^0.5.15",
+        "@tailwindcss/vite": "^4.0.0-beta.9",
+        "astro": "^5.2.5",
         "sass": "1.83.0",
         "typescript": "5.7.2",
-        "webcoreui": "0.9.0"
+        "webcoreui": "0.9.0",
+        "tailwindcss": "^4.0.0-beta.9"
     }
 }

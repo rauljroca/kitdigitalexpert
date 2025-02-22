@@ -1,0 +1,1 @@
+import{o as r}from"./DOMUtils.DAQrewGk.js";r('[data-id="w-copy"]',"click",e=>{const t=e.currentTarget,n=t.nextElementSibling,o=t.parentElement?.parentElement,i=t.parentElement?.previousSibling?.textContent?.trim();t.style.opacity="0",t.style.pointerEvents="none",n.style.opacity="1",o.removeAttribute("data-tooltip"),navigator.clipboard.writeText(i)},!0);

@@ -1,0 +1,1 @@
+import{o as r}from"./DOMUtils.DAQrewGk.js";r('[data-id="w-spoiler"]',"click",e=>{const t=e.currentTarget;t.dataset.visible="true",t.removeAttribute("data-tooltip"),t.removeAttribute("role"),t.removeAttribute("tabindex")},!0);
