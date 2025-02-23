@@ -21,3 +21,5 @@
     font-family: InterVariable, sans-serif;
   }
 }
+
+html { scroll-behavior: smooth; }
