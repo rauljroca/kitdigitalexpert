@@ -58,25 +58,29 @@ function calculateAosDuration(index) {
         <span>Soluciones</span>
         <span class="font-bold">Kit Digital</span>
       </h3>
+      <div class="mt-6 mb-12">
+        <img src="/kitdigitallogos.png" alt="Kit Digital logos" />
+      </div>
     </div>
     <div class="flex flex-col text-secondary mt-24 gap-12 lg:gap-32">
       { testimonials.map((opinion, index) => (
-        <div id={opinion.anchor} class="grid grid-cols-1 lg:items-end lg:grid-cols-4 mb-24 gap-4">
+        <div id={opinion.anchor} class="grid grid-cols-1 lg:items-end lg:grid-cols-4 mb-24 lg:mb-8 gap-4">
           <div data-aos="fade-left"
-         data-aos-duration={calculateAosDuration(index)} class="lg:col-span-3">
-              <p class="text-3xl lg:text-7xl leading-6 lg:leading-13">{ opinion.name }</p>
-              <p class="text-3xl  mt-3 leading-6 indent-9">{ opinion.name2 }</p>
-              <ul>
-                {opinion.info.map((info, subIndex) => (
-                  <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
-                    </svg>
-                    { info }
-                  </li>
-                ))}
-              </ul>
+            data-aos-duration={calculateAosDuration(index)} class="lg:col-span-3">
+            <p class="text-5xl lg:text-7xl lg:leading-14">{ opinion.name }</p>
+            <p class="text-3xl lg:leading-6 mt-3">{ opinion.name2 }</p>
+            <ul class="mt-3">
+              {opinion.info.map((info, subIndex) => (
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="#fff" aria-hidden="true" data-slot="icon"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"></path>
+                  </svg>
+                  { info }
+                </li>
+              ))}
+            </ul>
           </div>
-          <p class="italic text-xs block ">
+          <p class="italic text-xs block" data-aos="fade-right"
+            data-aos-duration={calculateAosDuration(index)}>
             {opinion.price}<br>{opinion.price2}
           </p>
          </div>
